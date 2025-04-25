@@ -1,0 +1,39 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.car1{
+    position: relative;
+    height: 600px;
+    width: 500px;
+    background-color: black;
+}
+
+.car2{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 90%;
+    left: 90%;
+    height: 150px;
+    width: 100px;
+    background-color: red;
+}
+
+.car3{
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    height: 50px;
+    width: 50px;
+    background-color: green;
+}
