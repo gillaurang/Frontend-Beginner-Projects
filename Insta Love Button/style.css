@@ -1,0 +1,38 @@
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    background-color: aqua;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box{
+    height: 400px;
+    width: 350px;
+    border-radius: 10px;
+    background-color: white;
+    overflow: hidden;
+    position: relative;
+}
+
+.box img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    left: 0;
+}
+.box i{
+    color: white;
+    font-size: 75px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    opacity: 0.8;
+    transition: transform ease 0.4s;
+
+}
+
