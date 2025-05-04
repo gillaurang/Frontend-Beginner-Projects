@@ -6,7 +6,10 @@
     --left-bg-color: rgb(87,84, 236,0.7);
     --right-bg-color: rgb(43,43, 43,0.8);
     --right-btn-hover-color: rgb(87,84, 236,1);
-    --left-btn-hover-color: rgb(28,122,28,1);
+    --left-btn-hover-color: rgb(43,43, 43,0.8);
+    --hover-width: 75%;
+    --other-width: 25%;
+    --speed: 1000ms
 }
 
 body{
@@ -94,4 +97,37 @@ h1{
 .split.right .btn:hover{
     background-color: var(--right-btn-hover-color);
     border-color: var(--right-btn-hover-color);
+}
+
+.hover-left .left{
+    width: var(--hover-width);
+}
+.hover-left .right{
+    width: var(--other-width);
+}
+
+.hover-right .right{
+    width: var(--hover-width);
+}
+.hover-right .left{
+    width: var(--other-width);
+}
+
+.split.right,
+.split.left,
+.split.left::before,
+.split.right::before{
+    transition: all var(--speed) ease-in-out;
+}
+
+@media(max-width: 800px){
+    h1{
+        font-size: 2rem;
+        top: 30%;
+    }
+    .btn{
+        padding: 1.2rem;
+        width: 12rem;
+    }
+
 }
