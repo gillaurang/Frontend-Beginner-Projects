@@ -22,9 +22,6 @@ document.querySelector('.center')
    img.setAttribute("src", "https://images.unsplash.com/photo-1418065460487-3e41a6c84dc5?q=80&w=2200&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
    div.appendChild(img);
 
-setTimeout(() => {
-    img.style.transform = 'translateY(0)'; // Animate to normal position
-  }, 50);
 
    document.body.appendChild(div)
 
